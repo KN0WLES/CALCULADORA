@@ -55,6 +55,9 @@ public class CalculadoraF
                     System.out.println("Derivada: " + derivada);
                     break;
 
+                case 8: // Fórmulas Físicas
+                    mostrarFormulasFisicas();
+                    break;
             }
         } while(opcion != 0);
         scanner.close();
@@ -69,6 +72,7 @@ public class CalculadoraF
         System.out.println("5. Potencia (2 valores)");
         System.out.println("6. Raíz cuadrada (1 valor)");
         System.out.println("7. Derivar función polinómica (ej: 3x^2 + 2x + 1)");
+        System.out.println("8. Fórmulas Físicas");
         System.out.println("0. Salir");
         System.out.print("Seleccione una opción: ");
     }
@@ -195,5 +199,30 @@ public class CalculadoraF
 
         return derivada.length() == 0 ? "0" : derivada.toString();
     }
-}
 
+    public static void mostrarFormulasFisicas() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("\nFORMULAS FÍSICAS:");
+        System.out.println("1. Movimiento Rectilíneo Uniforme (MRU)");
+
+        System.out.print("Seleccione una fórmula para ver: ");
+        int seleccion = scanner.nextInt();
+
+        switch(seleccion) {
+            case 1:
+                System.out.println("Fórmula del MRU (Movimiento Rectilíneo Uniforme):");
+                System.out.println("v = d / t");
+                System.out.println("d = v * t");
+                System.out.println("t = d / v");
+                System.out.println("Donde:");
+                System.out.println("v = velocidad (m/s)");
+                System.out.println("d = distancia (m)");
+                System.out.println("t = tiempo (s)");
+                break;
+
+            default:
+                System.out.println("Opción no válida.");
+                break;
+        }
+    }
+}
