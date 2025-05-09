@@ -29,6 +29,7 @@ public class CalculadoraGUI extends JFrame {
             "%", "CE", "C", "⌫",
             "xⁿ", "x²", "x³", "÷",
             "ⁿ√x", "²√x", "³√x", "×",
+            "n!",
             "7", "8", "9", "-",
             "4", "5", "6", "+",
             "1", "2", "3", "=",
@@ -160,7 +161,19 @@ public class CalculadoraGUI extends JFrame {
                     operacionPendiente = operacion;
                     iniciarNuevoNumero = true;
                     break;
-                    
+                case "n!":
+                    try {
+                     int numero = Integer.parseInt(pantalla.getText());
+                     int resultado = factorial(numero);
+                      pantalla.setText(String.valueOf(resultado));
+                   } catch (NumberFormatException e) {
+                  pantalla.setText("Error: Ingrese entero");
+                 } catch (ArithmeticException e) {
+                 pantalla.setText("Error: " + e.getMessage());
+                 }
+                 iniciarNuevoNumero = true;
+                 break;
+                 
                 case "=":
                     calcularOperacionPendiente();
                     operacionPendiente = "";
