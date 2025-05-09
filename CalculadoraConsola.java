@@ -26,6 +26,7 @@ public class CalculadoraConsola {
         System.out.println("4. División (2 valores)");
         System.out.println("5. Potencia (2 valores)");
         System.out.println("6. Raíz cuadrada (1 valor)");
+        System.out.println("7. Factorial (n!)");
         System.out.println("0. Salir");
         System.out.print("Seleccione una opción: ");
     }
@@ -39,6 +40,7 @@ public class CalculadoraConsola {
                 case 4: operacionDivision(); break;
                 case 5: operacionPotencia(); break;
                 case 6: operacionRaiz(); break;
+                case 7: operacionFactorial(); break;
                 case 0: System.out.println("¡Hasta luego!"); break;
                 default: System.out.println("Opción no válida");
             }
@@ -105,5 +107,17 @@ public class CalculadoraConsola {
         double numero = scanner.nextDouble();
         double resultado = OperacionesCalculadora.raizCuadrada(numero);
         System.out.println("Resultado: " + resultado);
+
     }
+    private void operacionFactorial(){
+       System.out.println("ingrese un numero");
+       int numero= scanner.nextInt();
+        int resultado = factorial(numero);
+        System.out.println("Resultado:"+resultado);
+
+    }
+    
+
+    
+    
 }
