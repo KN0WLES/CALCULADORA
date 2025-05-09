@@ -29,11 +29,10 @@ public class CalculadoraGUI extends JFrame {
             "%", "CE", "C", "⌫",
             "xⁿ", "x²", "x³", "÷",
             "ⁿ√x", "²√x", "³√x", "×",
-            "n!",
             "7", "8", "9", "-",
             "4", "5", "6", "+",
             "1", "2", "3", "=",
-            "±", "0", ".", "="
+            "±", "0", ".", "n!"
         };
 
         for (String texto : botones) {
@@ -161,19 +160,20 @@ public class CalculadoraGUI extends JFrame {
                     operacionPendiente = operacion;
                     iniciarNuevoNumero = true;
                     break;
+                    
                 case "n!":
                     try {
-                     int numero = Integer.parseInt(pantalla.getText());
-                     int resultado = factorial(numero);
-                      pantalla.setText(String.valueOf(resultado));
-                   } catch (NumberFormatException e) {
-                  pantalla.setText("Error: Ingrese entero");
-                 } catch (ArithmeticException e) {
-                 pantalla.setText("Error: " + e.getMessage());
-                 }
-                 iniciarNuevoNumero = true;
-                 break;
-                 
+                        int numero = Integer.parseInt(pantalla.getText());
+                        int resultadoFactorial = factorial(numero);
+                        pantalla.setText(String.valueOf(resultadoFactorial));
+                    } catch (NumberFormatException e) {
+                        pantalla.setText("Error: Ingrese entero");
+                    } catch (ArithmeticException e) {
+                        pantalla.setText("Error: " + e.getMessage());
+                    }
+                    iniciarNuevoNumero = true;
+                    break;
+                    
                 case "=":
                     calcularOperacionPendiente();
                     operacionPendiente = "";
@@ -187,6 +187,21 @@ public class CalculadoraGUI extends JFrame {
             pantalla.setText("Error");
             iniciarNuevoNumero = true;
         }
+    }
+
+    private int factorial(int n) {
+        if (n < 0) {
+            throw new ArithmeticException("No factorial para negativos");
+        }
+        if (n == 0 || n == 1) {
+            return 1;
+        }
+        
+        int resultado = 1;
+        for (int i = 2; i <= n; i++) {
+            resultado *= i;
+        }
+        return resultado;
     }
 
     private void calcularOperacionPendiente() {
