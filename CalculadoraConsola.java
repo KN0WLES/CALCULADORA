@@ -121,7 +121,7 @@ public class CalculadoraConsola {
       if (n==0)
           res=0;
       else
-        res=n+factorial(n-1);  
+        res=n*factorial(n-1);  
      return res ;
     }
     
