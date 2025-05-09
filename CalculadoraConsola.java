@@ -116,6 +116,14 @@ public class CalculadoraConsola {
         System.out.println("Resultado:"+resultado);
 
     }
+    private int factorial(int n){
+      int res;
+      if (n==0)
+          res=0;
+      else
+        res=n+factorial(n-1);  
+     return res ;
+    }
     
 
     
