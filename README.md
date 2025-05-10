@@ -93,3 +93,6 @@ Se añadieron nuevas funciones, como:
 
 ![consola](<imagenes/Captura de pantalla_20250509_211144.png>)
 
+
+Lamentablemente por falta de tiempo se tuvieron que dejar de lado varias funciones que se quedaron en ramas de prueba.
+
