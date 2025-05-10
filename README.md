@@ -31,7 +31,7 @@ Durante el desarrollo del proyecto se aplicó el flujo GitFlow. Las experiencias
 
 - 2CONDE2 sobre KNOWLES:
   - Buenas practicas: nombres claros de las ramas.
-  - Malas practicas: dejarse influenciar por el ego haciendo grandes avences sin usar commits.
+  - Malas practicas: dejarse influenciar por el ego haciendo grandes avences sin usar commits , uso de mayusculas en los commits.
   
 
 ## Alias y hooks utilizados
