@@ -2,7 +2,8 @@
 
 ## Nombre del equipo
 Team CALCULATOR-3000  
-Integrantes: Nahuel, Diego, Winsor
+Integrantes: 
+KNOWLES, 2CONDE2, Sentinela1209, Oliverbohorquez
 
 ## GitFlow utilizado
 Se utilizó una variante del modelo GitFlow con las siguientes características:
@@ -16,13 +17,13 @@ Se utilizó una variante del modelo GitFlow con las siguientes características:
 Durante el desarrollo del proyecto se aplicó el flujo GitFlow. Las experiencias fueron:
 
 - ✅ Facilidad para dividir tareas y evitar pisarse el trabajo.
-- ⚠️ Problema: Se generó un conflicto entre la rama de Diego y la de Nahuel al modificar el mismo archivo. El conflicto fue generado por Diego al no actualizar su rama antes de hacer merge.
+- ⚠️ Problema: Se generó un conflicto entre la rama de 2CONDE2 y la de KNOWLES al modificar la misma rama. El conflicto fue generado por KNOWLES al actualizar una rama en la cual estaba trabajando 2CONDE2.
 - ✅ El conflicto fue resuelto con una revisión conjunta durante la integración.
 - 👍 GitFlow fue útil para organizar el trabajo, aunque al principio hubo confusión sobre cuándo hacer merge a develop.
 
 ## Evaluación de buenas y malas prácticas
 
-- Winsor sobre Nahuel:
+- KNOWLES sobre 2CONDE2:
   - Buenas prácticas: commits descriptivos y frecuentes.
   - Malas prácticas: trabajar directo en develop sin feature branch en una ocasión.
 
