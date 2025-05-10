@@ -29,13 +29,10 @@ Durante el desarrollo del proyecto se aplicó el flujo GitFlow. Las experiencias
   - Buenas prácticas: commits descriptivos y frecuentes.
   - Malas prácticas: trabajar directo en develop sin feature branch en una ocasión.
 
-- Nahuel sobre Diego:
-  - Buenas prácticas: uso correcto de ramas feature.
-  - Malas prácticas: falta de documentación en los commits, algunos fueron genéricos como "arreglos".
-
-- Diego sobre Winsor:
-  - Buenas prácticas: uso de alias de Git para revisión rápida.
-  - Malas prácticas: olvidó hacer push después de un merge local.
+- 2CONDE2 sobre KNOWLES:
+  - Buenas practicas: nombres claros de las ramas.
+  - Malas practicas: dejarse influenciar por el ego haciendo grandes avences sin usar commits.
+  
 
 ## Alias y hooks utilizados
 - Alias creado:
