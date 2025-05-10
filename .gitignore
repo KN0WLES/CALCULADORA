@@ -1,0 +1,13 @@
+# Archivos temporales
+*.log
+*.tmp
+
+# Archivos de compilación
+*.class
+*.jar
+
+# Configuraciones del entorno
+.env
+
+# Directorios de dependencias
+node_modules/
